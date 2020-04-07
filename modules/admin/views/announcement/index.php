@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\search\AnnouncementSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Announcements';
+$this->title = 'E\'lonlar';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="announcement-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Announcement', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('E\'lon yaratish', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -26,7 +26,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
             'title',
             'content:ntext',
             'announ',

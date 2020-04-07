@@ -92,7 +92,7 @@ use app\models\Post;
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
                 <div class="service-icon">
-                    <i class="fa fa-image fa-3x"></i>
+                    <i class="fa fa-graduation-cap fa-3x"></i>
                 </div>
                 <div class="service-content">
                     <h4><a href="#chairs"><?=Yii::t('yii','Chairs')?></a></h4>
@@ -101,7 +101,7 @@ use app\models\Post;
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
                 <div class="service-icon">
-                    <img src="<?=Yii::$app->homeUrl?>/img/services-icons/5.png" alt="1">
+                    <i class="fa fa-clock-o fa-3x"></i>
                 </div>
                 <div class="service-content">
                     <h4><?=Yii::t('yii','Announcement')?></h4>
@@ -110,7 +110,7 @@ use app\models\Post;
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
                 <div class="service-icon">
-                    <img src="<?=Yii::$app->homeUrl?>/img/services-icons/6.png" alt="1">
+                   <i class="fa fa-pencil fa-3x"></i>
                 </div>
                 <div class="service-content">
                     <h4><a href="#activities"><?=Yii::t('yii','activities')?></a></h4>

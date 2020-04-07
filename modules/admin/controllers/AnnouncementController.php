@@ -8,6 +8,8 @@ use app\models\search\AnnouncementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+
 
 /**
  * AnnouncemenController implements the CRUD actions for Announcement model.
@@ -17,9 +19,21 @@ class AnnouncementController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
+     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'ruleConfig' => [
+                    'class' => 'app\components\AccessRule'
+                ],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['admin'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

@@ -22,7 +22,7 @@ class AppAsset extends AssetBundle
     public $css = [
     'css/site.css',
     'css/bootstrap.min.css',
-	//'css/font-awesome.min.css',
+	'css/font-awesome.min.css',
 	'css/themify-icons.css',
 	'css/magnific-popup.css',
 	'css/animate.css',
@@ -30,7 +30,7 @@ class AppAsset extends AssetBundle
 	'css/style.css',
     'css/TimeCircles.css',
     //'https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet',
-     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+    // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
     ];
     public $js = [
     'js/jquery-3.2.1.min.js',

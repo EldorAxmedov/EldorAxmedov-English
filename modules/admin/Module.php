@@ -9,10 +9,11 @@ use Yii;
  */
 class Module extends \yii\base\Module
 {
+    public $defaultRoute = 'post';
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'app\modules\admin\controllers';
+     public $controllerNamespace = 'app\modules\admin\controllers';
 
     /**
      * {@inheritdoc}

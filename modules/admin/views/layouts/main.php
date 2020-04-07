@@ -40,7 +40,7 @@ $url = Yii::$app->homeUrl.'backend/';
             <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
         </div>
         <!--logo start-->
-        <a href="<?= Yii::$app->homeUrl?>" class="logo"><b>STEM</b></a>
+        <a href="<?= Yii::$app->homeUrl?>" class="logo"><b>ENGLISH 1</b></a>
         <!--logo end-->
         <div class="top-menu">
             <ul class="nav pull-right top-menu">
@@ -63,13 +63,6 @@ $url = Yii::$app->homeUrl.'backend/';
                 <h5 class="centered"><?= Yii::$app->user->identity->full_name?></h5>
 
                 <?php $controller = Yii::$app->controller->id; ?>
-                <li class="mt">
-                    <a class="<?= ($controller=='default')?'active':''?>" href="<?= Url::to(['default/'])?>">
-                        <i class="fa fa-dashboard"></i>
-                        <span>Bosh sahifa</span>
-                    </a>
-                </li>
-
                 <li class="sub-menu">
                     <a class="<?= ($controller=='post')?'active':''?>" href="<?= Url::to(['post/'])?>" >
                         <i class="fa fa-newspaper-o"></i>

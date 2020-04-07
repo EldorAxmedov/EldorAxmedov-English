@@ -365,19 +365,19 @@ ol {
 /*---------------------
 	Hero Section
 -----------------------*/
-
 .hs-item {
 	min-height: 760px;
 	position: relative;
 	display: table;
 	width: 100%;
-	}
+		}
 
 .hs-item .hs-text {
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
 	z-index: 2;
+
 }
 
 .hs-item .hs-subtitle {
