@@ -13,25 +13,21 @@ use app\models\Post;
 <!-- Hero section -->
 <section class="hero-section">
     <div class="hero-slider owl-carousel">
-        <?php foreach($sliders as $slider): ?>
-            <div class="hs-item set-bg" data-setbg="<?=Yii::$app->homeUrl?>/img/gallery/1.jpg">
+           <div class="hs-item set-bg" data-setbg="/img/gallery/1.jpg">
                 <div class="hs-text">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-8">
-                                <div class="hs-subtitle"><?=$slider->category->name?></div>
-
-                                <h2 class="hs-title"><?=mb_substr($slider->getDescription(), 0, 100);?>...</h2>
-
-                                <div class="site-btn"><a href="<?=Url::to(['post/view', 'id'=>$slider->id])?>"><?=Yii::t('yii','READ MORE')?></a></div>
+                            <div class="col-lg-4 offset-lg-4">
+                                <h2 class="hs-title">Telegram kanalimizga a'zo bo'ling</h2>
+                                <a href="#" class="btn btn-primary btn-lg active site-btn" role="button" aria-pressed="true">A'zo bo'ling</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <?endforeach;?>
-    </div>
+        </div>
 </section>
+
 <!-- Hero section end -->
 
 
@@ -124,7 +120,7 @@ use app\models\Post;
 
 
 <!-- Enroll section -->
-<section class="enroll-section spad set-bg" id="about" data-setbg="<?=Yii::$app->homeUrl?>/upload/global/english_faculty_1.jpg">
+<section class="enroll-section spad set-bg" id="about" data-setbg="/upload/global/english_faculty_1.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -152,7 +148,7 @@ use app\models\Post;
                      </div>
             </div>
             <div class="col-lg-6 offset-lg-1 p-lg-0 p-4">
-                <img src="<?=Yii::$app->homeUrl?>/upload/global/english_faculty_1.jpg" alt="">
+                <img src="/upload/global/english_faculty_1.jpg" alt="">
             </div>
         </div>
     </div>
@@ -171,14 +167,14 @@ use app\models\Post;
             <!-- course item -->
             <div class="col-lg-4 col-md-6 course-item">
                 <div class="course-thumb">
-                    <img src="<?=Yii::$app->homeUrl?>/img/course/1.jpg" alt="">
+                    <img src="/upload/<?=($latestNews->img)? $latestNews->img:'english_faculty_1.jpg'?>" alt="">
                     <div class="course-cat">
-                        <span><?=$latestNews->category->name?></span>
+                        <span><i class="fa fa-clock-o"></i> <?= Yii::$app->formatter->asRelativeTime($latestNews->created_at)?></span>
                     </div>
                 </div>
                 <div class="course-info">
-                    <div class="date"><i class="fa fa-clock-o"></i> <?= Yii::$app->formatter->asRelativeTime($latestNews->created_at)?></div>
-                    <h4><?=mb_substr($latestNews->getDescription(), 0, 100);?>....</h4>
+                    <div class="date"></div>
+                    <p><?=mb_substr($latestNews->getDescription(), 0, 100);?>....</h4>
                     <div class="site-btn"><a href="<?=Url::to(['post/view', 'id'=>$latestNews->id])?>"><?=Yii::t('yii','READ MORE')?></a></div>
                 </div>
             </div>
@@ -191,7 +187,7 @@ use app\models\Post;
 
 
 <!-- Fact section -->
-<section class="fact-section spad set-bg" data-setbg="<?=Yii::$app->homeUrl?>/img/fact-bg.jpg">
+<section class="fact-section spad set-bg" data-setbg="/img/fact-bg.jpg">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-lg-3 fact">
@@ -245,7 +241,7 @@ use app\models\Post;
             <?php foreach ($events as $event):?>
             <div class="col-md-6 event-item">
                 <div class="event-thumb">
-                    <img src="<?=Yii::$app->homeUrl?>/img/event/1.jpg" alt="">
+                    <img src="/img/event/1.jpg" alt="">
                     <div class="event-date">
                         <span><?=$event->category->name?></span>
                     </div>
@@ -266,28 +262,28 @@ use app\models\Post;
     <div class="gallery" id="gallery">
         <div class="grid-sizer"></div>
         <div class="gallery-item gi-big set-bg" data-setbg="img/gallery/1.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/1.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/1.jpg"><i class="ti-plus"></i></a>
         </div>
         <div class="gallery-item set-bg" data-setbg="img/gallery/2.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/2.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/2.jpg"><i class="ti-plus"></i></a>
         </div>
         <div class="gallery-item set-bg" data-setbg="img/gallery/3.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/3.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/3.jpg"><i class="ti-plus"></i></a>
         </div>
         <div class="gallery-item gi-long set-bg" data-setbg="img/gallery/5.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/5.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/5.jpg"><i class="ti-plus"></i></a>
         </div>
         <div class="gallery-item gi-big set-bg" data-setbg="img/gallery/8.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/8.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/8.jpg"><i class="ti-plus"></i></a>
         </div>
         <div class="gallery-item gi-long set-bg" data-setbg="img/gallery/4.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/4.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/4.jpg"><i class="ti-plus"></i></a>
         </div>
         <div class="gallery-item set-bg" data-setbg="img/gallery/6.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/6.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/6.jpg"><i class="ti-plus"></i></a>
         </div>
         <div class="gallery-item set-bg" data-setbg="img/gallery/7.jpg">
-            <a class="img-popup" href="<?=Yii::$app->homeUrl?>/img/gallery/7.jpg"><i class="ti-plus"></i></a>
+            <a class="img-popup" href="/img/gallery/7.jpg"><i class="ti-plus"></i></a>
         </div>
     </div>
 </div>

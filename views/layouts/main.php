@@ -93,6 +93,7 @@ AppAsset::register($this);
                     <ul>
                         <li><a href="<?=Yii::$app->homeUrl?>"><?=Yii::t('yii','Home')?></a></li>
                         <li><a href="<?=Url::to(['site/news'])?>"><?=Yii::t('yii','News')?></a></li>
+                        <li><a href="<?=Url::to(['site/chairs'])?>"><?=Yii::t('yii','Chairs')?></a></li>
                         <li><a href="<?=Url::to(['site/about'])?>"><?=Yii::t('yii','About')?></a></li>
 
                     </ul>

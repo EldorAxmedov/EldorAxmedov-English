@@ -11,7 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <!-- Breadcrumb section -->
 <div class="site-breadcrumb">
     <div class="container">
-        <a href="<?=Yii::$app->homeUrl?>"><i class="fa fa-home"></i> <?=$this->title = 'Home'?></a> <i class="fa fa-angle-right"></i>
+        <a href=""><i class="fa fa-home"></i> <?=$this->title = 'Home'?></a> <i class="fa fa-angle-right"></i>
         <span> <?= $this->title=Yii::t('yii', 'News')?></span>
     </div>
 </div>
@@ -25,25 +25,24 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php foreach ($newses as $news):?>
             <div class="col-lg-4 col-md-6 course-item">
                 <div class="course-thumb">
-                    <img src="<?=Yii::$app->homeUrl?>/img/course/1.jpg" alt="">
-                    <div class="course-cat">
-                        <span><?=mb_substr($news->getTitle(), 0, 20)?></span>
-                    </div>
+                    <img src="/upload/<?=($news->img)? $news->img:'english_faculty_1.jpg'?>" alt="">
                 </div>
                 <div class="course-info">
                     <div class="date"><i class="fa fa-clock-o"></i> <?=Yii::$app->formatter->asDate($news->created_at);?></div>
-                    <h4><?=mb_substr($news->getDescription(), 0, 100)?></h4>
+                    <p><?=mb_substr($news->getDescription(), 0, 100)?></p>
                     <div class="site-btn"><a href="<?=Url::to(['post/view', 'id'=>$news->id])?>"><?=Yii::t('yii','READ MORE')?></a></div>
                 </div>
             </div>
         <?php endforeach;?>
         </div>
-        <div class="text-center">
-        <ul>
-                <?php echo LinkPager::widget(['pagination' => $pagination,
-                   ]);?>
-        </ul>
-        </div>
-    </div>
+      </div>
     </section>
 <!-- Courses section end-->
+  <div class="container">
+     <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+                       <?php echo LinkPager::widget(['pagination' => $pagination,
+                   ]);?>
+         </div>
+     </div>
+ </div>

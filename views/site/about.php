@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="site-breadcrumb">
     <div class="container">
-        <a href="<?=Yii::$app->homeUrl?>"><i class="fa fa-home"></i> <?=$this->title = 'Home'?></a> <i class="fa fa-angle-right"></i>
+        <a href=""><i class="fa fa-home"></i> <?=$this->title = 'Home'?></a> <i class="fa fa-angle-right"></i>
         <span> <?=$this->title = $abouts->getTitle()?></span>
     </div>
 </div>
@@ -31,8 +31,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 </ul>
             </div>
             <div class="col-lg-6 pt-5 pt-lg-0">
-                <img src="<?=Yii::$app->homeUrl?>/upload/global/english_faculty_1.jpg" alt="" style="margin-bottom: 10px">
-                <img src="<?=Yii::$app->homeUrl?>/upload/global/2.jpg" alt="">
+                <img src="/upload/global/english_faculty_1.jpg" alt="" style="margin-bottom: 10px">
+                <img src="/upload/global/2.jpg" alt="">
                         </div>
         </div>
         <div class="col-lg-12">
@@ -104,7 +104,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-md-6 col-lg-3">
                 <div class="member">
-                    <div class="member-pic set-bg" data-setbg="<?=Yii::$app->homeUrl?>/img/rahbariyat/Anvar_Rustamovich.jpg">
+                    <div class="member-pic set-bg" data-setbg="/img/rahbariyat/Anvar_Rustamovich.jpg">
                         <div class="member-social">
                             <a href=""><i class="fa fa-facebook fa-3x"></i></a>
                             <a href=""><i class="fa fa-telegram fa-3x"></i></a>
@@ -116,7 +116,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="member">
-                    <div class="member-pic set-bg" data-setbg="<?=Yii::$app->homeUrl?>/img/rahbariyat/Behzod_Yakubovich.jpg">
+                    <div class="member-pic set-bg" data-setbg="/img/rahbariyat/Behzod_Yakubovich.jpg">
                         <div class="member-social">
                             <a href=""><i class="fa fa-facebook fa-3x"></i></a>
                             <a href=""><i class="fa fa-telegram fa-3x"></i></a>
@@ -128,7 +128,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="member">
-                    <div class="member-pic set-bg" data-setbg="<?=Yii::$app->homeUrl?>/img/rahbariyat/Ergashev_Mirsaid.jpg">
+                    <div class="member-pic set-bg" data-setbg="/img/rahbariyat/Ergashev_Mirsaid.jpg">
                         <div class="member-social">
                             <a href=""><i class="fa fa-facebook fa-3x"></i></a>
                             <a href=""><i class="fa fa-telegram fa-3x"></i></a>

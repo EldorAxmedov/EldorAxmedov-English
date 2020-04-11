@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Post */
@@ -20,13 +21,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     <div class="post-content">
                         <h3><a href="<?=Yii::$app->homeUrl?>"><?=$model->getTitle();?></a></h3>
+                        <p><?=$model->getContent()?></p>
                         <div class="post-meta">
                             <span><i class="fa fa-calendar-o"> <?=Yii::$app->formatter->asDate($model->created_at);?></i></span>
-                            <span><i class="fa fa-user"> <?=$model->user->full_name?></i></span>
-                        </div>
-                        <p><?=$model->getContent()?></p>
-                        <div class="tag"><i class="fa fa-tag"></i> <?=$model->category->name?></div>
+                            <span><i class="fa fa-user"> <?=$model->user->full_name?></i></span><span><i class="fa fa-tag"> <?=$model->category->name?></i></span>
                            </div>
+                        </div>
+                       
 
                    </div>
             </div>
@@ -37,12 +38,12 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h5 class="widget-title latest-news"><?=Yii::t('yii','Latest news')?></h5>
                     <div class="recent-post-widget">
                         <!-- recent post -->
-                        <?php foreach ($latestViewNewses as $latestViewNews):?>
+                              <?php foreach ($latestViewNewses as $latestViewNews):?>
                         <div class="rp-item">
-                            <div class="rp-thumb set-bg" data-setbg="/web/img/blog/recent-post/1.jpg"></div>
-                            <div class="rp-content">
-                                <h6><?=$latestViewNews->getTitle();?></h6>
-                                <p><i class="fa fa-clock-o"></i> <?=$latestViewNews->created_at?></p>
+                             <div class="rp-thumb set-bg" data-setbg="/web/upload/<?=($latestViewNews->img)? $latestViewNews->img:'english_faculty_1.jpg'?>"></div>
+                        <div class="rp-content">
+                                <h6><a href="<?=Url::to(['post/view', 'id'=>$latestViewNews->id])?>"><?=$latestViewNews->getTitle();?></a></h6>
+                                <p><i class="fa fa-clock-o"></i> <?=Yii::$app->formatter->asDate($latestViewNews->created_at);?></p>
                             </div>
                         </div>
                         <?endforeach;?>
