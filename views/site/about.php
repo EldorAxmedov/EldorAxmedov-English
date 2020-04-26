@@ -66,16 +66,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     'chart' => [
                         'type' => 'bar'
                     ],
-                    'title' => ['text' => $chairses],
+                    'title' => ['text' => 'Auditoriyalar soni'],
                     'xAxis' => [
-                        'categories' => [2018, 2019, 2020]
+                        'categories' => ['Maruzalar xonasi', '20 kishilik', '18 kishilik', '16 kishilik', 'Lingafon xonalar', 'Kompyuter xonalari']
                     ],
                     'yAxis' => [
                         'title' => ['text' => 'Soni']
                     ],
                     'series' => [
-                        ['name' => $chairses, 'data' => [3, 4, 5]],
-                                          ]
+                        ['name' => 'Auditoriyalar', 'data' => [5, 18, 11, 2, 2, 2]],
+                                                             ]
                 ]
             ]);
             ?>
@@ -138,7 +138,19 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p><?=Yii::t('yii', 'Deputy dean')?></p>
                 </div>
             </div>
+             <div class="col-md-6 col-lg-3">
+                <div class="member">
+                    <div class="member-pic set-bg" data-setbg="/img/rahbariyat/Abdullayev_Asqar.jpg">
+                        <div class="member-social">
+                            <a href=""><i class="fa fa-facebook fa-3x"></i></a>
+                            <a href=""><i class="fa fa-telegram fa-3x"></i></a>
+                        </div>
                     </div>
+                    <h5>Asqar Abduhakimovich Abdullayev</h5>
+                    <p><?=Yii::t('yii', 'Deputy dean')?></p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- Team section end -->

@@ -65,7 +65,7 @@ use app\models\Post;
                 </div>
                 <div class="service-content">
                     <h4><a href="#latest_news"> <?=Yii::t('yii','News')?></a></h4>
-                    <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                    <p>Yangiliklar sahifasida fakultetimizda bo'lib o'tgan so'ngi yangiliklar bilan tanishishingiz mumkin</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
@@ -74,7 +74,7 @@ use app\models\Post;
                 </div>
                 <div class="service-content">
                     <h4><a href="#about"><?=Yii::t('yii','about')?></a></h4>
-                    <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                    <p>Biz haqimizda sahifasida fakultetimiz haqida umumiy ma'lumotga ega bo'lasiz</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
@@ -83,7 +83,7 @@ use app\models\Post;
                 </div>
                 <div class="service-content">
                     <h4><a href="#gallery"><?=Yii::t('yii','Gallery')?></a></h4>
-                    <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                    <p>Galereya sahifasida fakultetimizda bo'lib o'tgan tadbirlardan lavhalar tomosha qilishingiz mumkin</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
@@ -92,7 +92,7 @@ use app\models\Post;
                 </div>
                 <div class="service-content">
                     <h4><a href="#chairs"><?=Yii::t('yii','Chairs')?></a></h4>
-                    <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                    <p>Kafedralar sahifasida fakultetimiz kafedralari haqida to'liq ma'lumot olishingiz va kafedralarimiz bilan tanishishingiz mumkin</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
@@ -101,7 +101,7 @@ use app\models\Post;
                 </div>
                 <div class="service-content">
                     <h4><?=Yii::t('yii','Announcement')?></h4>
-                    <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                    <p>E'lonlar sahifasida fakultetimizda bo'lib o'tadigan tadbir va uchrashuvlardan xabardor bo'lishingiz mumkin</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 service-item">
@@ -110,7 +110,7 @@ use app\models\Post;
                 </div>
                 <div class="service-content">
                     <h4><a href="#activities"><?=Yii::t('yii','activities')?></a></h4>
-                    <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                    <p>Tadbirlar sahifasida fakultetimizda bo;lib otgan tadbirlardan xabardor bo'lishingiz mumkin</p>
                 </div>
             </div>
         </div>

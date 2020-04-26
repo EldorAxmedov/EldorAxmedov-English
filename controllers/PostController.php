@@ -32,28 +32,7 @@ class PostController extends Controller
     }
 
     /**
-     * Lists all Post models.
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        $latestNewses = Post::find()->limit(6)->orderBy(['id'=>SORT_DESC])->all();
-        $events=Post::find()->limit(2)->where(['category_id'=>8])->all();
-        $elon=Post::find()->where(['category_id'=>8])->one();
-        $chairs=Post::find()->where(['category_id'=>7])->orderBy(['id'=>SORT_DESC])->all();
-        $sliders=Post::find()->limit(6)->orderBy(['id'=>SORT_DESC])->all();
-
-            return $this->render('index',[
-            'latestNewses'=>$latestNewses,
-            'events'=>$events,
-            'sliders'=>$sliders,
-            'chairs'=>$chairs,
-            'elon'=>$elon,
-        ]);
-    }
-
-    /**
-     * Displays a single Post model.
+       * Displays a single Post model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
